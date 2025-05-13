@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SASS Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">MySite</div>
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Build Beautiful Websites with SASS</h1>
+      <p>Write clean, maintainable styles using powerful features like mixins and variables.</p>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </section>
+  
+  <section class="features">
+    <div class="feature-card">
+      <h3>Reusable Mixins</h3>
+      <p>Create repeatable blocks of CSS for layouts, buttons, and more.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Variables</h3>
+      <p>Store colors, spacing, fonts, and change them across your entire site easily.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Responsive Design</h3>
+      <p>Use media query mixins to scale beautifully across devices.</p>
+    </div>
+  </section>
+  
+  <section class="testimonials">
+    <blockquote>
+      “SASS made my CSS so much easier to manage. Love the mixins and structure.”
+      <cite>– A Happy Developer</cite>
+    </blockquote>
+  </section>
+
+  <main class="main-layout">
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Quick links or widgets go here.</p>
+    </aside>
+  
+    <section class="content">
+      <h2>Welcome to the Main Content</h2>
+      <p>This section contains the primary information for users.</p>
+  
+      <div class="cards">
+        <div class="card">
+          <h3>Card Title</h3>
+          <p>This is a card with reusable styles.</p>
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>© 2025 My Website</p>
+  </footer>
+
+</body>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</html>
